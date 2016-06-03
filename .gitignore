@@ -1,0 +1,11 @@
+build/
+build/iphone/
+/build/iphone/
+/build/
+
+
+build/iphone/picturize-survey.xcodeproj/project.pbxproj
+
+build/iphone/main.m
+
+build/iphone/Classes/defines.h

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <property name="acs-oauth-secret-production" type="string">SloXzjssIsiPLX4ierhVXprIWNTvLEWt</property>
+    <property name="acs-oauth-key-production" type="string">qYGqhmzKY2z64cFnIB93k4CyvO30hgpv</property>
+    <property name="acs-api-key-production" type="string">KqDTU2qDlazNtU8b10VdQKWWmcsRQOvK</property>
+    <property name="acs-oauth-secret-development" type="string">LZ9wZd1ONttsAyy0GKl2r9PulTQ0JLIO</property>
+    <property name="acs-oauth-key-development" type="string">1e9DdcI7xNgWmYPcupzwhTZqXf84qxfA</property>
+    <property name="acs-api-key-development" type="string">44IbLtuWMBcaWN75ygF7vlnRJiXHHdu9</property>
+    <id>dk.picturize.picturizesurvey</id>
+    <name>Picturize Insight</name>
+    <version>1.0.12</version>
+    <publisher>Lukic</publisher>
+    <url>http://www.picturize.dk</url>
+    <description>not specified</description>
+    <copyright>2014 by Lukic</copyright>
+    <icon>appicon.png</icon>
+    <fullscreen>false</fullscreen>
+    <navbar-hidden>false</navbar-hidden>
+    <analytics>false</analytics>
+    <guid>64f3d152-e558-4dbf-b77b-63479f5fe0b8</guid>
+    <property name="ti.ui.defaultunit" type="string">dp</property>
+    <ios>
+        <plist>
+            <dict>
+                <key>UISupportedInterfaceOrientations~iphone</key>
+                <array>
+                    <string>UIInterfaceOrientationPortrait</string>
+                </array>
+                <key>UISupportedInterfaceOrientations~ipad</key>
+                <array>
+                    <string>UIInterfaceOrientationPortrait</string>
+                    <string>UIInterfaceOrientationPortraitUpsideDown</string>
+                    <string>UIInterfaceOrientationLandscapeLeft</string>
+                    <string>UIInterfaceOrientationLandscapeRight</string>
+                </array>
+                <key>UIRequiresPersistentWiFi</key>
+                <false/>
+                <key>UIPrerenderedIcon</key>
+                <false/>
+                <key>UIStatusBarHidden</key>
+                <false/>
+                <key>UIStatusBarStyle</key>
+                <string>UIStatusBarStyleDefault</string>
+                <key>UIAppFonts</key>
+                <array>
+                    <string>/fonts/OpenSans-Bold.ttf</string>
+                    <string>/fonts/OpenSans-BoldItalic.ttf</string>
+                    <string>/fonts/OpenSans-ExtraBold.ttf</string>
+                    <string>/fonts/OpenSans-ExtraBoldItalic.ttf</string>
+                    <string>/fonts/OpenSans-Italic.ttf</string>
+                    <string>/fonts/OpenSans-Light.ttf</string>
+                    <string>/fonts/OpenSans-LightItalic.ttf</string>
+                    <string>/fonts/OpenSans-Regular.ttf</string>
+                    <string>/fonts/OpenSans-Semibold.ttf</string>
+                    <string>/fonts/OpenSans-SemiboldItalic.ttf</string>
+                </array>
+            </dict>
+        </plist>
+    </ios>
+    <android xmlns:android="http://schemas.android.com/apk/res/android">
+        <manifest>
+            <application android:theme="@style/NoActionBar">
+                <activity
+                    android:configChanges="keyboardHidden|orientation"
+                    android:name="org.appcelerator.titanium.TiActivity" android:screenOrientation="portrait"/>
+            </application>
+        </manifest>
+    </android>
+    <mobileweb>
+        <precache/>
+        <splash>
+            <enabled>true</enabled>
+            <inline-css-images>true</inline-css-images>
+        </splash>
+        <theme>default</theme>
+    </mobileweb>
+    <modules>
+        <module platform="iphone" version="1.4.3">dk.napp.slidemenu</module>
+        <module platform="android">dk.napp.drawer</module>
+        <module platform="android">ti.imagefactory</module>
+    </modules>
+    <deployment-targets>
+        <target device="android">true</target>
+        <target device="blackberry">false</target>
+        <target device="ipad">false</target>
+        <target device="iphone">true</target>
+        <target device="mobileweb">false</target>
+        <target device="tizen">false</target>
+    </deployment-targets>
+    <sdk-version>3.5.0.GA</sdk-version>
+</ti:app>
